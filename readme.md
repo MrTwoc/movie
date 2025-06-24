@@ -1,7 +1,7 @@
 # Movie App
 
 ## 简介
-这是一个跟随课程学习的练习Demo</br>
+这是一个跟随课程学习的练习Demo的第二章</br>
 ["Rust 实战：电影信息维护（命令行版）"](https://www.bilibili.com/video/BV1i1jJz3Eqf?spm_id_from=333.788.videopod.sections&vd_source=511b084e4bf87d71d725c5db0fb20b7f)</br>
 Movie App 是一个简单的电影应用程序，用于管理电影收藏。</br>
 该应用程序提供了用户登录和退出登录的功能，支持管理员和普通用户两种角色。</br>
