@@ -22,6 +22,9 @@ movie/
 ## 依赖
 clap 4.5.40：用于解析命令行参数。</br>
 rpassword 7.4.0：用于安全地读取用户输入的密码。</br>
+serde 1.0.194：用于序列化和反序列化数据。</br>
+serde_json 1.0.106：用于处理 JSON 数据。</br>
+unicode-width 0.2.1：用于获取 Unicode 字符宽度。</br>
 
 ## 使用方法
 ```
