@@ -161,7 +161,6 @@ pub fn handler_edit(disc: &usize, index: &usize) -> Result<(), Box<dyn Error>> {
             services::write_to_json(&movies)?;
             println!("电影编辑成功!");
         }
-
     } else {
         println!("需要登陆 admin 用户才能编辑电影");
     }

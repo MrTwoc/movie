@@ -24,7 +24,7 @@ struct Cli {
 }
 #[derive(Subcommand)]
 enum Commands {
-    /// User log into the system
+    /// 登录
     Login {
         /// The username of the user
         #[arg(short, long)]
