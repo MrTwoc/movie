@@ -1,7 +1,7 @@
 # Movie App
 
 ## 简介
-这是一个跟随课程学习的练习Demo的第二章</br>
+这是一个跟随课程学习的练习Demo的第二、三章</br>
 [第一章仓库](https://github.com/MrTwoc/movie_importer)</br>
 [【课程地址】"Rust 实战：电影信息维护（命令行版）"](https://www.bilibili.com/video/BV1i1jJz3Eqf?spm_id_from=333.788.videopod.sections&vd_source=511b084e4bf87d71d725c5db0fb20b7f)</br>
 Movie App 是一个简单的电影应用程序，用于管理电影收藏。</br>
