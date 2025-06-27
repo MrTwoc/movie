@@ -25,6 +25,7 @@ rpassword 7.4.0：用于安全地读取用户输入的密码。</br>
 
 ## 使用方法
 ```
+cargo run -- help
 登录：
 cargo run -- login --username <your_username>
 例如
