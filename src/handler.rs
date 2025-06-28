@@ -99,16 +99,24 @@ pub fn handler_delete(disc: &usize, index: &usize) -> Result<(), Box<dyn Error>>
 }
 
 pub fn handler_edit(disc: &usize, index: &usize) -> Result<(), Box<dyn Error>> {
+    // 检查用户是否有权限编辑电影
     if let Some(Role::Admin) = get_logged_in_role()? {
+        // 读取电影列表
         let mut movies = services::read_form_json()?;
+        // 查找指定碟片和索引的电影
         if let Some(movie) = movies
         .iter_mut()
+        // 如果碟片编号匹配
         .filter(|m| m.disc == *disc)
+        // enumerate() 返回索引和电影元组
         .enumerate()
+        // 查找指定索引的电影
         .find(|(i, _)| i == index)
+        // map: 将找到的元组转换为电影对象
         .map(|(_, m)| m)
         {
             print!("请输入新的disc (当前: {}): ", movie.disc);
+            // 刷新输出缓冲区，确保提示信息立即显示
             io::stdout().flush()?;
 
             let mut disc = String::new();
